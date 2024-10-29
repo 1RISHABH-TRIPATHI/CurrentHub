@@ -33,7 +33,7 @@ function HomePage() {
           
         }}
       >
-       <img src='public\Currents-Hub.png' height={'100%'} width={'100%'} alt="" /> 
+       <img src='https://res.cloudinary.com/duih8hld2/image/upload/v1729679634/news/v5yab14otgvungrufpnd.png' height={'100%'} width={'100%'} alt="" /> 
       </Box>
       <Container
         maxWidth="md"
