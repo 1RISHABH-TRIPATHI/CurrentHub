@@ -22,6 +22,8 @@ function EveryNewsGrid() {
     page,
     search,
   });
+
+
   if (isError) return <NotFoundPage />;
  
   return (
@@ -116,9 +118,12 @@ function EveryNewsGrid() {
             }}
           >
             {data.articles?.map((Item, index) => {
+            
+              
               return (
                 <Box key={index}>
                   <NeswTop_Card
+                    
                     urlToImage={Item.urlToImage}
                     title={Item.title}
                     url={Item.url}

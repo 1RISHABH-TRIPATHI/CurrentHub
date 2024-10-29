@@ -6,7 +6,6 @@ import HomePage from "./Navbar_Based/HomePage";
 import News_Grid from "./news_Component/News_Grid";
 import topNewsGrid from "./news_Component/topNewsGrid";
 import EveryNewsGrid from "./news_Component/EveryNewsGrid";
-
 function ConTrol_Pathwith_Com() {
   const router = createBrowserRouter([
     {
@@ -32,7 +31,7 @@ function ConTrol_Pathwith_Com() {
         {
           path:'every',
           Component:EveryNewsGrid
-        }
+        },
       ],
     },
   ]);

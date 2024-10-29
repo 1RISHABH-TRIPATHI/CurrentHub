@@ -24,7 +24,7 @@ function HomePage() {
     <>
       <Box
         sx={{
-         
+          
           height: { xs: "300px", md: "550px" },
           display: "flex",
           alignItems: "center",
@@ -33,15 +33,7 @@ function HomePage() {
           
         }}
       >
-        <ReactPlayer
-          url={
-            "https://res.cloudinary.com/duih8hld2/video/upload/v1729679636/news/p57m4mnhgn4d0sgeei11.mp4"
-          }
-          playing={true} 
-          loop={true}
-          width={"100%"}
-          height={"100%"}
-        />
+       <img src='public\Currents-Hub.png' height={'100%'} width={'100%'} alt="" /> 
       </Box>
       <Container
         maxWidth="md"

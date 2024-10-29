@@ -7,10 +7,19 @@ import {
   Typography,
   CardActions,
   Button,
+ 
+  Box,
 } from "@mui/material";
-import { ArrowRightAlt, Person, Person2 } from "@mui/icons-material";
+import {
+  ArrowRightAlt,
+  Person,
+} from "@mui/icons-material";
+import { json } from "react-router-dom";
 
-const NeswTop_Card = ({ author, urlToImage, url, title, description }) => {
+const NeswTop_Card = (props) => {
+  const {author, urlToImage, url, title, description }=props;
+ 
+  
   return (
     <Card
       sx={{
@@ -47,17 +56,27 @@ const NeswTop_Card = ({ author, urlToImage, url, title, description }) => {
           {description}
         </Typography>
         {author && (
-          <Typography
+          <Box
             sx={{
               display: "flex",
+              justifyContent: "space-between",
               alignItems: "center",
-              fontFamily: "monospace",
               gap: "10px",
             }}
           >
-            <Person />
-            {author}
-          </Typography>
+            <Typography
+              sx={{
+                display: "flex",
+                gap: "10px",
+                alignItems: "center",
+                fontFamily: "monospace",
+              }}
+            >
+              <Person />
+              {author}
+            </Typography>
+           
+          </Box>
         )}
       </CardContent>
       <CardActions
@@ -77,15 +96,13 @@ const NeswTop_Card = ({ author, urlToImage, url, title, description }) => {
             ":hover": {
               opacity: "none",
             },
-            ":hover":{
-                backgroundColor:'navy',
-                color:'white'
-
-              },
-            p:1
+            ":hover": {
+              backgroundColor: "navy",
+              color: "white",
+            },
+            p: 1,
           }}
-          endIcon={<ArrowRightAlt/>}
-         
+          endIcon={<ArrowRightAlt />}
           href={url}
           target="_blank"
         >

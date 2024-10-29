@@ -25,6 +25,9 @@ export default function News_Grid() {
     Category,
     Priority,
   });
+  
+  
+  
   if (isLoading || isFetching) {
     return <NewsCardSkeleton />;
   }
@@ -93,6 +96,7 @@ export default function News_Grid() {
           return (
             <News_Card
               key={index}
+              
               title={Item.title}
               pubDate={Item.pubDate}
               link={Item.link}
@@ -103,6 +107,8 @@ export default function News_Grid() {
               source_name={Item.source_name}
               category={Item.category}
               source_icon={Item.source_icon}
+              
+              
             />
           );
         })}

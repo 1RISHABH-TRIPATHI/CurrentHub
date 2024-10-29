@@ -22,7 +22,7 @@ const Footer = () => {
         color: "white",
         padding: "40px 0",
         mt:4,
-        
+        minWidth:{xs:'300px',md:'900px'}
       }}
     >
       <Container>
@@ -34,7 +34,7 @@ const Footer = () => {
               }}
               width={200}
               height={80}
-              src="https://res.cloudinary.com/duih8hld2/image/upload/v1729681861/news/uf6evvt3vhjgm6nfk3fa.png"
+              src="https://res.cloudinary.com/duih8hld2/image/upload/v1729681861/news/r8kjtyatdo9htxnknmu3.png"
             />
             <Typography
               component="h1"

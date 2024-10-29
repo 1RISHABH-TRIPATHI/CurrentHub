@@ -22,10 +22,10 @@ import {
 } from "@mui/material";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import LanguageDialog from "../news_Component/LanguageDialog";
-import Country_DialogBox from "../news_Component/Country_DialogBox";
 import { useDispatch } from "react-redux";
 import { setPriority } from "../../Store/LanguageSlice";
+const LanguageDialog=React.lazy(()=>import("../news_Component/LanguageDialog"));
+const Country_DialogBox=React.lazy(()=>import("../news_Component/Country_DialogBox"));
 function DrawerSide({ open }) {
   const [openSort, setOpenSort] = useState(false);
   const [openLang, setOpenLang] = useState(false);
@@ -354,6 +354,7 @@ function DrawerSide({ open }) {
               />
             </ListItemButton>
           </ListItem>
+         
         </List>
       </Drawer>
       <LanguageDialog open={openLang} ToggleLanguage={ToggleLanguage} />

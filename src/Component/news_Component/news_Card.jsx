@@ -9,7 +9,7 @@ import {
   Chip,
   Typography,
 } from "@mui/material";
-import { AccessTime, ArrowRightAlt, Article, Person, Public } from "@mui/icons-material";
+import { AccessTime, ArrowRightAlt, Article, Favorite, Person, Public } from "@mui/icons-material";
 export default function News_Card({
   title,
   description,
@@ -22,6 +22,20 @@ export default function News_Card({
   category,
   source_icon,
 }) {
+  
+  const data={
+  title,
+  description,
+  pubDate,
+  image_url,
+  link,
+  country,
+  creator,
+  source_name,
+  category,
+  source_icon,
+  }
+  
   return (
     <>
       <Card sx={{ maxWidth: {xs:'320px',md:'380px'}, m: 2, boxShadow: 3, borderRadius: 3 }}>
@@ -74,12 +88,12 @@ export default function News_Card({
             <Chip label={country} color="secondary" icon={<Public />} />
           </Box>
 
-          <Box display="flex" alignItems="center" gap={1}>
+          <Box display="flex" alignItems="center" gap={'10px'} >
             <AccessTime fontSize="small" color="action" />
             <Typography variant="body2" color="text.secondary">
               {new Date(pubDate).toLocaleString()}
             </Typography>
-          </Box>
+            </Box>
         </CardContent>
 
         <Box textAlign="center" mb={2}>

@@ -67,7 +67,7 @@ export default function Navbar() {
               
               sx={{
                 fontFamily: "'Pacifico', cursive",
-                fontSize: { xs: "20px", md: "37px" },
+                fontSize: { xs: "20px", md: "32px" },
                 color: "wheat",
                 textShadow: "0px 3px 0px gray",
                 letterSpacing: "2px",
